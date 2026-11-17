@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="176" viewBox="-14 -14 574 178">
+  <!-- chomp wordmark: round geometric strokes, the o in Chomp's warm
+       gradient with a bite taken out of it, like the app icon. -->
+  <defs>
+    <linearGradient id="warm" x1="215" y1="40" x2="285" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFC14D"/>
+      <stop offset="0.45" stop-color="#FF7A3D"/>
+      <stop offset="1" stop-color="#EE2F72"/>
+    </linearGradient>
+    <mask id="bite" maskUnits="userSpaceOnUse" x="-14" y="-14" width="574" height="178">
+      <rect x="-14" y="-14" width="574" height="178" fill="#fff"/>
+      <circle cx="284" cy="44" r="17" fill="#000"/>
+      <circle cx="265" cy="33" r="11" fill="#000"/>
+      <circle cx="296" cy="64" r="11" fill="#000"/>
+    </mask>
+  </defs>
+  <g fill="none" stroke="#F5F1EC" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80.3 57.5 A35 35 0 1 0 80.3 92.5"/>
+    <path d="M115 0 V110 M115 74 A33 33 0 0 1 181 74 V110"/>
+    <path d="M320 40 V110 M320 68 A28 28 0 0 1 376 68 V110 M376 68 A28 28 0 0 1 432 68 V110"/>
+    <path d="M467 40 V150"/>
+    <circle cx="502" cy="75" r="35"/>
+  </g>
+  <circle cx="250" cy="75" r="35" fill="none" stroke="url(#warm)" stroke-width="22" mask="url(#bite)"/>
+</svg>

@@ -1,0 +1,44 @@
+name: Bug report
+description: Something isn't working the way it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping make Chomp better. Please don't attach files that contain private or sensitive data.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a 500 MB JSON file …
+        2. Fold …
+        3. See …
+  - type: input
+    id: file
+    attributes:
+      label: File type and size
+      placeholder: "JSON, 1.2 GB, one line"
+  - type: input
+    id: version
+    attributes:
+      label: Chomp version
+      description: Chomp › About Chomp
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and Mac
+      placeholder: "macOS 15.1, MacBook Pro (M3)"
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else
